@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.alkologic.commons.IntervalTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-07-09T09:47:56" hostname="DESKTOP-52NO2ET" time="0.01">
+  <properties/>
+  <testcase name="testIsIn" classname="com.alkologic.commons.IntervalTest" time="0.002"/>
+  <testcase name="testGetDuration" classname="com.alkologic.commons.IntervalTest" time="0.007"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

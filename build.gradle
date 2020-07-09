@@ -1,0 +1,34 @@
+apply plugin: 'java'
+apply plugin: 'maven-publish'
+
+
+group = 'com.alkologic'
+version = '1.0.3'
+
+repositories {
+    jcenter()
+}
+
+task sourceJar(type: Jar) {
+  from sourceSets.main.allJava
+  classifier "sources"
+}
+
+project.publishing {
+    publications {
+        mavenJava(MavenPublication) { 
+        	from project.components.java
+        	artifact sourceJar 
+        }
+    }
+}
+
+dependencies {
+	compile 'org.projectlombok:lombok:1.18.12'
+	annotationProcessor 'org.projectlombok:lombok:1.18.12'
+	
+	compile 'com.fasterxml.jackson.core:jackson-databind:2.8.3'
+	compile 'junit:junit:4.12'
+	
+	testAnnotationProcessor 'org.projectlombok:lombok:1.18.12'
+}
