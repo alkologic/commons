@@ -7,8 +7,12 @@ tmp/
 *~.nib
 local.properties
 .settings/
+.gradle/
 .loadpath
 .recommenders
+.classpath
+.project
+
 
 # External tool builders
 .externalToolBuilders/
